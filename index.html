@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>OTP Verification Form</title>
+    <link rel="stylesheet" href="otp.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="otp.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script type="text/javascript" src="netpie.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <i class="bx bxs-check-shield"></i>
+      </header>
+      <h4>Enter OTP Code</h4>
+      <form action="#">
+        <div class="input-field">
+          <input type="number" id="num1" />
+          <input type="number" id="num2" disabled />
+          <input type="number" id="num3" disabled />
+          <input type="number" id="num4" disabled />
+          <input type="number" id="num5" disabled />
+          <input type="number" id="num6" disabled />
+          <input type="number" id="num7" disabled />
+        </div>
+        <button onclick="publishMessage()">Verify OTP</button>
+      </form>
+    </div>
+  </body>
+</html>
